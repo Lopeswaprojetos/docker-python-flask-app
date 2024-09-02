@@ -8,6 +8,29 @@ Este projeto demonstra um aplicativo web simples usando Flask, rodando dentro de
 - Docker Compose para configuração fácil de múltiplos contêineres.
 - Exemplo de tratamento de logs e templates no Flask.
 
+
+## Getting Started
+Prerequisites
+Docker installed on your system
+Docker Compose installed
+
+## Running the Application
+Clone the repository:
+git clone https://github.com/Lopeswaprojetos/docker-python-flask-app.git
+cd docker-python-flask-app
+
+## Build and start the containers:
+docker-compose up --build
+
+Access the web application at http://localhost:5000
+
+## Testing the Application
+You can run the included unit tests with the following command:
+docker-compose run web pytest
+
+## Contributing
+Feel free to submit pull requests or open issues to improve the project.
+
 ## Estrutura do Projeto
 ```plaintext
 docker-python-flask-app/
@@ -22,24 +45,4 @@ docker-python-flask-app/
 └── test_app.py             # Testes unitários básicos para a aplicação
 
 
-Getting Started
-Prerequisites
-Docker installed on your system
-Docker Compose installed
 
-Running the Application
-Clone the repository:
-git clone https://github.com/Lopeswaprojetos/docker-python-flask-app.git
-cd docker-python-flask-app
-
-Build and start the containers:
-docker-compose up --build
-
-Access the web application at http://localhost:5000
-
-Testing the Application
-You can run the included unit tests with the following command:
-docker-compose run web pytest
-
-Contributing
-Feel free to submit pull requests or open issues to improve the project.
